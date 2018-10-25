@@ -18,7 +18,7 @@ public class CreditCardTest {
     public void canBlockCreditCard() {
         CreditCard card = new CreditCard();
         
-        cardBlock();
+        card.Block();
         
         Assert.assertTrue(card.isBlocked());
     }
