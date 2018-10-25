@@ -14,4 +14,15 @@ public class CreditCardTest {
         Assert.assertTrue(card.getLimit() == 2000);
     }
     
+    @Test
+    public void  withdrawedDecreaseAvailableFounds() {
+        CreditCard card = new CreditCard();
+        
+        card.assignLimit(2000);
+        
+        card.withdraw(1000);
+        
+        Assert.assertTrue(card.getCountBalance() == 1000);
+    }
+    
 }
